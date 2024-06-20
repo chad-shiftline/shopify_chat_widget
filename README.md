@@ -1,0 +1,1 @@
+# shopify_chat_widget
