@@ -4,10 +4,6 @@
         container.style.border = '1px solid #000';
         container.style.padding = '10px';
         container.style.margin = '10px 0';
-        container.style.position = 'fixed';
-        container.style.bottom = '0';
-        container.style.width = '100%';
-        container.style.backgroundColor = '#f9f9f9';
 
         const title = document.createElement('h3');
         title.innerText = 'Echo Widget';
@@ -29,9 +25,10 @@
         sendButton.addEventListener('click', function() {
             const data = {
                 message: input.value,
-                customer_id: window.customerData.id,
-                customer_email: window.customerData.email
+                customer_id: '{{ customer.id }}',
+                customer_email: '{{ customer.email }}'  
             };
+
             fetch('https://https://2677-105-233-51-198.ngrok-free.app/api/message', {
                 method: 'POST',
                 headers: {
@@ -58,4 +55,3 @@
 
     document.addEventListener('DOMContentLoaded', createWidget);
 })();
-
