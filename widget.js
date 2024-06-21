@@ -1,4 +1,7 @@
 (function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const customerId = urlParams.get('customer_id');
+    
     function createWidget() {
         const container = document.createElement('div');
         container.style.border = '1px solid #000';
