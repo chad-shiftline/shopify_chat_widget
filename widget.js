@@ -26,7 +26,7 @@
             const data = {
                 message: input.value,
                 customer_id: '{{ customer.id }}',
-                //customer_email: '{{ customer.email }}'  
+                id: `Hello, Customer ${customerId}!`  
             };
 
             fetch('https://50c5-105-233-51-198.ngrok-free.app/api/message', {
