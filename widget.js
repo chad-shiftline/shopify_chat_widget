@@ -29,7 +29,7 @@
 
         sendButton.addEventListener('click', function() {
             const data = { message: input.value };
-            fetch('https://your-server-url/endpoint', {
+            fetch('https://cpdev.pythonanywhere.com', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
