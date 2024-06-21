@@ -25,7 +25,7 @@
         sendButton.addEventListener('click', function() {
             const data = {
                 message: input.value,
-                //customer_id: '{{ customer.id }}',
+                customer_id: '{{ customer.id }}',
                 //customer_email: '{{ customer.email }}'  
             };
 
