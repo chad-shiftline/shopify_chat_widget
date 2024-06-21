@@ -124,8 +124,8 @@
             })
             .then(response => response.json())
             .then(data => {
-                const responseMessage = data.response ? `Server response: ${data.response}` : `Error: ${data.error}`;
-                appendMessage(message, 'client');
+                const responseMessage = data.response ? `Response: ${data.response}` : `Error: ${data.error}`;
+                appendMessage(`${customerId}: ${message}`, 'client');
                 appendMessage(responseMessage, 'server');
             })
             .catch((error) => {
