@@ -29,7 +29,7 @@
                 customer_email: '{{ customer.email }}'  
             };
 
-            fetch('https://https://2677-105-233-51-198.ngrok-free.app/api/message', {
+            fetch('https://2677-105-233-51-198.ngrok-free.app/api/message', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
