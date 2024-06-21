@@ -27,8 +27,12 @@
         container.appendChild(sendButton);
 
         sendButton.addEventListener('click', function() {
-            const data = { message: input.value };
-            fetch('https://2677-105-233-51-198.ngrok-free.app/api/message', { 
+            const data = {
+                message: input.value,
+                customer_id: window.customerData.id,
+                customer_email: window.customerData.email
+            };
+            fetch('https://https://2677-105-233-51-198.ngrok-free.app/api/message', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -54,3 +58,4 @@
 
     document.addEventListener('DOMContentLoaded', createWidget);
 })();
+
