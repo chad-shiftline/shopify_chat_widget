@@ -115,7 +115,7 @@
                 customer_id: customerId
             };
 
-            fetch('https://239b-105-233-51-198.ngrok-free.app/api/message', {
+            fetch('https://239b-105-233-151-55.ngrok-free.app/api/message', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
